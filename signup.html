@@ -1,0 +1,60 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    
+
+  </head>
+  <body >
+    <main>
+
+
+        <div id="signup" class=" p-4 mx-auto  ">
+   
+         <h1 class="text-center">Smart Login System</h1>
+   
+         <div class="pt-3 pb-3" >
+           <input oninput="validationName()" id="userName" class="w-100 p-1 form-control is-invalid" type="text" placeholder="Enter Your Name">
+
+           <p id="msgName" class="text-center text-white">Write Your First and Last name</p>
+
+         </div>
+   
+         <div class="pt-3 pb-3">
+           <input oninput="validationEmail()" id="userEmail" class="w-100 p-1 form-control is-invalid" type="text" placeholder="Enter your email">
+           <p id="msgEmail" class="text-center text-white">Write a valid email</p>
+         </div>
+   
+         <div class="pt-3 pb-3">
+           <input oninput="validationPassword()" id="userPassword" class="w-100 p-1 form-control is-invalid" type="password" placeholder="Enter your password">
+           <p id="msgPassword" class="text-center text-white">Write a password of 8 characters having at least one letter and one number</p>
+         </div>
+
+        <div>
+          <p id="inputsMsg" class="text-center d-none" style="color: red;">All inputs is required</p>
+          <p id="emailMsg" class="text-center d-none" style="color: red;">Email already exist</p>
+          <p id="successMsg" class="text-center d-none" style="color: green;">Sucess</p>
+        </div>
+   
+         <div class="pt-3 pb-3">
+           <button onclick="addUser()" class="btn btn-outline-primary w-100">Sign Up</button>
+         </div>
+   
+         <div class="pb-3 link">
+           <p class="text-center text-white">You have an account? <a onclick="signIn()">Sign In</a></p>
+         </div>
+        </div>
+   
+   
+   
+       </main>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+main{
+    min-height: 100dvh;
+}
+body{
+    background-color: #24353F;
+}
+
+#nanbar{
+    padding-bottom: 100px;
+}
+#navbar nav{
+    background-color: transparent !important;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    padding: 10px 200px;
+}
+
+#navbar nav a{
+    color: white;
+}
+
+#navbar nav button{
+    color: #b4b4b4;
+}
+#navbar nav button:hover{
+    color: white;
+}
+
+#welcome {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 50%; 
+    margin-top: 200px;
+}
+
+#welcome h1{
+    color: #17A2B8;
+}
